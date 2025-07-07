@@ -8,7 +8,7 @@ function Category() {
   const filtered = places.filter((p) => p.tags.includes(tag));
 
   return (
-    <div>
+    <div className="container">
       <h2>{tag}</h2>
       <ul>
         {filtered.map((place) => (

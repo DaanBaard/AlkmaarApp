@@ -8,10 +8,10 @@ const tags = ["eten", "drinken", "cultuur", "vaenw"];
 
 function Home() {
   return (
-    <div>
-      <img src={alkmaarImage} alt="Alkmaar" style={{ width: "100%" }} />
+    <div className="container">
+      <img src={alkmaarImage} alt="Alkmaar" />
       <h1>Een alternatieve gids door Alkmaar</h1>
-      <div>
+      <div style={{ textAlign: "center" }}>
         {tags.map((tag) => (
           <Link to={`/category/${tag}`} key={tag}>
             <button>{tag}</button>

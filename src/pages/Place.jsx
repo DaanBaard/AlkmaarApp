@@ -7,10 +7,10 @@ function Place() {
   const { id } = useParams();
   const place = places.find((p) => p.id === parseInt(id));
 
-  if (!place) return <div>Plaats niet gevonden</div>;
+  if (!place) return <div className="container">Plaats niet gevonden</div>;
 
   return (
-    <div>
+    <div className="container">
       <h2>{place.name}</h2>
       <p>{place.description}</p>
       <a href={`https://maps.google.com/?q=${place.address}`} target="_blank" rel="noopener noreferrer">
